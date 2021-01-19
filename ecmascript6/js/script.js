@@ -17,9 +17,10 @@ const bicicle =[
   }
 ]
 
-let pesoMinore = bicicle[0];
+// cercare in un array di oggetti, quello con il peso minore creando una variabile
+let pesoMinore = bicicle[0];//prendo come riferimento il primo oggetto dell'arrey creat
 
-for ( var i=0; i < bicicle.length; i++){
+for ( let i=0; i < bicicle.length; i++){
   if(bicicle[i].peso < pesoMinore.peso){
     pesoMinore = bicicle[i]
   }
