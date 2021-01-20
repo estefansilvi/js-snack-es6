@@ -1,4 +1,4 @@
-var squadre = [
+const squadre = [
   {
     'nome': 'juventus',
     'punteggio': 0,
@@ -22,27 +22,29 @@ var squadre = [
 ]
 
 function numeriRandom(min, max) {
-  return Math.floor.(Math.Random() * (max - min)-1) + min;
+  return Math.numeriRandom() * ((max - min)+1) - min;
 }
 
-var squadra = squadre[i];
-for(var i=0; i < squadre.length; i++){
+let squadra = squadre[i];
+for(let i=0; i < squadre.length; i++){
 
-  squadra.punteggio= numeriRandom(1,100);
+  squadra.punteggio= numeriRandom(1,10);
   squadra.falliSubiti= numeriRandom(1,100);
 }
 
-console.log('array1',squadre);
+console.log(squadre);
 
 
-var sqnuovaSquadra = [];
-for(var i=0; i < squadre.length; i++){
+const nuovaSquadra = [];
+for(let i=0; i < squadre.length; i++){
   var vecchiaSquadra = squadre[i];
 
+const {nome, falliSubiti}= nuovaSquadra;
+
   sqnuovaSquadra.push({
-    nome: vecchiaSquadra.nome,
-    falliSubiti: vecchiaSquadra.falliSubiti,
+    nome,
+    falliSubiti
   })
 }
 
-console.log('array2', nuovaSquadra )
+console.log( nuovaSquadra )
