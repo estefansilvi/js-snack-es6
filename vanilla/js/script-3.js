@@ -7,8 +7,8 @@ var primoArray=['ciao','pippo','pluto','paperino','topolino','minni'];
 function popolaNuovoArray(arrayParole, parolaPrima, parolaUltima){
   var secondoArray=[];
 
-  for(var i=0;i<=arrayParole.lenght;i++){
-    if(i<= parolaPrima && i<= parolaUltima){
+  for(var i=0; i <= arrayParole.length; i++){
+    if(parolaPrima <= i && parolaUltima >= i){
       secondoArray.push(arrayParole[i]);
     }
   }
